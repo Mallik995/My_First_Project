@@ -1,0 +1,62 @@
+<html>
+    <head>
+        
+        <title>Form page</title>
+
+        <script >
+            function display()
+            {
+                
+                var strfname = document.getElementById("fnameid").value;
+                var strlname = document.getElementById("lnameid").value;
+                var stremail = document.getElementById("emailid").value;
+                var strnumber = document.getElementById("numberid").value;
+                var strage = document.getElementById("ageid").value;
+                var strgender = document.getElementById("genderid").value;
+                var straddress = document.getElementById("addressid").value;
+                
+               
+                document.getElementById("f1").innerHTML=strfname;
+                document.getElementById("f2").innerHTML=strlname;          
+                document.getElementById("f3").innerHTML=stremail;
+                document.getElementById("f4").innerHTML=strnumber;
+                document.getElementById("f5").innerHTML=strage;
+                document.getElementById("f6").innerHTML=strgender;
+                document.getElementById("f7").innerHTML=straddress;
+                
+            }
+
+        </script>
+    </head>
+
+
+
+    <body>
+
+        <form>
+            Name :  <input type="text" name="fname" id="fnameid" value="First name" placeholder="fname" /> 
+                    <input type="text" name="lname" value="lname" id="lnameid" placeholder="lname" /><br><br>
+            E-mail :<input type="email" name="email" id="emailid" value="abc@gmail.com" placeholder="email" /><br><br>
+            Mob # : <input type="number" name="number" id="numberid" placeholder="number" value="123456789" /><br><br>
+            Age : <input type="text" name="age" id="ageid" value="in years" placeholder="age" /><br><br>
+            Gender :<br><br><input type="radio" name="gender" id="gender" value="Male" /> Male <input type="radio" name="gender" id="gender" value="female" /> Female 
+            <input type="radio" name="gender" id="gender" value="Others" /> Others<br><br>    
+            Adress : <br><br><textarea name="address" id="" cols="30" rows="5" placeholder="address" >Enter your communication address
+            </textarea><br> 
+
+                   
+                    <br><br><input type="button" value="Submit" onclick="display()" />
+        </form>
+
+        <div>
+            <p id="f1"></p>
+            <p id="f2"></p>
+            <p id="f3"></p>
+            <p id="f4"></p>
+            <p id="f5"></p>
+            <p id="f6"></p>
+            <p id="f7"></p>            
+        </div>
+
+    </body>
+</html>
